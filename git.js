@@ -3,7 +3,7 @@ window.github = (message) =>
     type: 'chat',
     room,
     author,
-    message: (Array.isArray(message) ? message[0] : message).replace('git:', 'https://github/'),
+    message: (Array.isArray(message) ? message[0] : message).replace('git:', 'https://github.com/'),
     timestamp: Date.now()
   })
 
@@ -12,6 +12,6 @@ window.gitlab = (message) =>
     type: 'chat',
     room,
     author,
-    message: (Array.isArray(message) ? message[0] : message).replace('git:', 'https://gitlab/'),
+    message: (Array.isArray(message) ? message[0] : message).replace('git:', 'https://gitlab.com/'),
     timestamp: Date.now()
   })
